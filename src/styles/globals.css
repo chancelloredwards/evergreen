@@ -1,10 +1,6 @@
-/* src/styles/globals.css */
+/* src/styles/globals.css 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Grain overlay on body */
+/* Body background + grain overlay */
 @layer base {
   body {
     background: #F8F6F0 url('/grain.png') repeat;
@@ -14,22 +10,10 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: theme('fontFamily.display');
     color: theme('colors.olive.600');
+    margin: 0;
   }
-  /* Prose customization for Markdown content */
-  .prose-olive a {
-    color: #556B2F;
-    text-decoration: underline;
-  }
-  .prose-olive h1, .prose-olive h2, .prose-olive h3 {
-    color: #556B2F;
-    font-family: 'Space Grotesk', sans-serif;
-  }
-  .prose-olive blockquote {
-    border-left-color: #8A9C63;
-    background-color: #ECE9E0;
-    padding-left: 1rem;
-    color: #444444;
-  }
+  /* …other styles… */
 }
+
 
 

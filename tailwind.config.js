@@ -1,5 +1,10 @@
 // tailwind.config.js
 module.exports = {
+  content: [
+    './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/styles/**/*.css',
+  ],
   theme: {
     extend: {
       colors: {
@@ -17,6 +22,9 @@ module.exports = {
       borderRadius: { DEFAULT: '0.375rem' }, // 6px
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography'),
+    // require('@tailwindcss/forms'),
+  ],
 };
-
