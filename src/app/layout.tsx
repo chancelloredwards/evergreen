@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-import './globals.css';     // ← ensure this path is correct
+import '@/styles/globals.css';     // ← ensure this path is correct
 
 import { getServerSession } from 'next-auth/next';
 import Providers from '@/components/providers';
