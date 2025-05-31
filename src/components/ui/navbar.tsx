@@ -1,12 +1,22 @@
 // src/components/ui/Navbar.tsx
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
+import Link from 'next/link';
 
 export default function Navbar() {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
+
+  // Optionally, you can handle a loading state:
+  if (status === 'loading') {
+    return (
+      <header className="bg-cream-50 shadow-sm sticky top-0 z-10">
+        <div className="max-w-4xl mx-auto py-4 px-6">
+          Loading…
+        </div>
+      </header>
+    );
+  }
 
   return (
     <header className="bg-cream-50 shadow-sm sticky top-0 z-10">
@@ -45,4 +55,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 
