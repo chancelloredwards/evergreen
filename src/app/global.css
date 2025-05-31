@@ -1,0 +1,27 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body and global settings */
+@layer base {
+  body {
+    background: #F8F6F0 url('/grain.png') repeat;
+    font-family: theme('fontFamily.body');
+    color: theme('colors.charcoal.900');
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.display');
+    color: theme('colors.olive.600');
+    margin: 0;
+  }
+  a {
+    color: theme('colors.olive.600');
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
