@@ -1,9 +1,8 @@
 // tailwind.config.js
 module.exports = {
   content: [
-    './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx, css}',
     './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/styles/**/*.css',
   ],
   theme: {
     extend: {
@@ -19,12 +18,12 @@ module.exports = {
         body:    ['"IBM Plex Sans"', 'Segoe UI', 'sans-serif'],
         mono:    ['"JetBrains Mono"', 'monospace'],
       },
-      borderRadius: { DEFAULT: '0.375rem' }, // 6px
+      borderRadius: { DEFAULT: '0.375rem' },
     },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography'),
-    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'), // optionally
   ],
 };
