@@ -1,4 +1,3 @@
-// tailwind.config.js (excerpt)
 module.exports = {
   theme: {
     extend: {
@@ -14,7 +13,8 @@ module.exports = {
         body:    ['"IBM Plex Sans"', 'Segoe UI', 'sans-serif'],
         mono:    ['"JetBrains Mono"', 'monospace']
       },
-      borderRadius: { DEFAULT: '0.375rem' }, // 6 px
+      borderRadius: { DEFAULT: '0.375rem' } // 6px
     }
   }
-}
+};
+
