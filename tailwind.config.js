@@ -1,8 +1,9 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/app/**/*.{js,ts,jsx,tsx,css}',    // must include .css under src/app
-    './src/components/**/*.{js,ts,jsx,tsx}', 
+    './src/app/**/*.{js,ts,jsx,tsx,css}',    // ← must include .css
+    './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -24,7 +25,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography'),
-    // require('@tailwindcss/forms'), // if needed
+    // require('@tailwindcss/forms'),
   ],
 };
 

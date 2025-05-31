@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-import './global.css';           // must be the *first* line
+import './global.css';   // ← must match the file created above
 
 import { getServerSession } from 'next-auth/next';
 import Providers from '@/components/providers';
