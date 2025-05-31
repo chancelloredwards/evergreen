@@ -1,11 +1,11 @@
 // src/app/layout.tsx
+import './global.css';           // must be the *first* line
 
 import { getServerSession } from 'next-auth/next';
 import Providers from '@/components/providers';
 import Header from '@/components/ui/header';
 import { Footer } from '@/components/ui/footer';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
-import '@/styles/globals.css';
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions);
@@ -22,6 +22,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     </html>
   );
 }
+
 
 
 
