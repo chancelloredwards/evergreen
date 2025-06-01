@@ -1,29 +1,38 @@
+/* File: src/app/global.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-html, body {
-background-color: #F8F6F0;   /* same as cream-50 */
-@apply font-body text-charcoal-900;
-background-image: url('/grain.png');
-background-repeat: repeat;
-margin: 0;
-padding: 0;
-}
+  html,
+  body {
+    font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif; /* font-body */
+    color: #212121; /* charcoal-900 */
+    margin: 0;
+    padding: 0;
+    background-color: #F8F6F0; /* cream-50 fallback */
+    background-image: url('/grain.png');
+    background-repeat: repeat;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-@apply font-display text-olive-600 m-0;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', 'Helvetica Neue', sans-serif; /* font-display */
+    margin: 0;
+    color: #556B2F; /* olive-600 */
+  }
 
-a {
-@apply text-olive-600 no-underline;
-}
-a\:hover {
-@apply underline;
-}
-}
+  a {
+    text-decoration: none;
+    color: #556B2F; /* olive-600 */
+  }
 
-.container {
-@apply max-w-7xl mx-auto px-6;
+  a:hover {
+    text-decoration: underline;
+  }
 }

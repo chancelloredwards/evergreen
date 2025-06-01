@@ -1,9 +1,5 @@
-'use client';
+import LandingPage from '@/components/landingpage';
 
-import { JSX } from 'react';
-import LandingPage from '../components/landingpage';
-
-export default function HomePage(): JSX.Element {
+export default function HomePage() {
   return <LandingPage />;
 }
-

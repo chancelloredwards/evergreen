@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/app/**/*.{js,ts,jsx,tsx,css}',
+    './src/app/**/*.{js,ts,jsx,tsx,css}', 
     './src/components/**/*.{js,ts,jsx,tsx,css}',
   ],
   theme: {
@@ -14,13 +14,11 @@ module.exports = {
         charcoal: { 700: '#444444', 900: '#212121' },
       },
       fontFamily: {
-        display: ['Space Grotesk', 'Helvetica Neue', 'sans-serif'],
-        body:    ['IBM Plex Sans', 'Segoe UI', 'sans-serif'],
-        mono:    ['JetBrains Mono', 'monospace'],
+        display: ['Space Grotesk','Helvetica Neue','sans-serif'],
+        body:    ['IBM Plex Sans','Segoe UI','sans-serif'],
+        mono:    ['JetBrains Mono','monospace'],
       },
-      borderRadius: {
-        DEFAULT: '0.375rem',
-      },
+      borderRadius: { DEFAULT: '0.375rem' },
     },
   },
   plugins: [

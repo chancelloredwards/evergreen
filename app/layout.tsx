@@ -1,6 +1,6 @@
-// Path: src/app/layout.tsx
+// File: src/app/layout.tsx
 
-import './global.css';            // ← your Tailwind/Global CSS must be imported here
+import './global.css';
 import { getServerSession } from 'next-auth/next';
 import Providers from '@/components/providers';
 import Header from '@/components/ui/header';

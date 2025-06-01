@@ -1,0 +1,18 @@
+<!-- public/images/laptop-dashboard.svg -->
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background of screen -->
+  <rect x="50" y="50" width="700" height="400" rx="20" ry="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"></rect>
+
+  <!-- Screen content (placeholder) -->
+  <rect x="100" y="100" width="600" height="300" rx="10" ry="10" fill="#F3F4F6"></rect>
+  <rect x="120" y="120" width="560" height="40" rx="5" ry="5" fill="#E2E8F0"></rect>
+  <rect x="120" y="180" width="400" height="20" rx="3" ry="3" fill="#E2E8F0"></rect>
+  <rect x="120" y="220" width="300" height="20" rx="3" ry="3" fill="#E2E8F0"></rect>
+  <rect x="120" y="260" width="500" height="20" rx="3" ry="3" fill="#E2E8F0"></rect>
+
+  <!-- Keyboard base -->
+  <rect x="25" y="460" width="750" height="80" rx="10" ry="10" fill="#CBD5E1"></rect>
+
+  <!-- Trackpad -->
+  <rect x="325" y="500" width="150" height="30" rx="5" ry="5" fill="#E2E8F0"></rect>
+</svg>
