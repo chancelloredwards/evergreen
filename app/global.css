@@ -4,7 +4,8 @@
 
 @layer base {
 html, body {
-@apply bg-cream-50 font-body text-charcoal-900;
+background-color: #F8F6F0;   /* same as cream-50 */
+@apply font-body text-charcoal-900;
 background-image: url('/grain.png');
 background-repeat: repeat;
 margin: 0;

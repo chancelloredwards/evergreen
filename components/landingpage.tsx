@@ -1,3 +1,5 @@
+// Path: src/components/LandingPage.tsx
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Container from '@/components/container';
@@ -67,12 +69,7 @@ export default function LandingPage() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 6v6l4 2"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
                 </svg>
               ),
             },
@@ -87,12 +84,7 @@ export default function LandingPage() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               ),
             },
@@ -124,9 +116,7 @@ export default function LandingPage() {
               transition={{ delay: i * 0.2, duration: 0.6 }}
               className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-200 flex flex-col items-start space-y-4"
             >
-              <div className="p-3 bg-olive-100 text-olive-600 rounded-full">
-                {icon}
-              </div>
+              <div className="p-3 bg-olive-100 text-olive-600 rounded-full">{icon}</div>
               <h3 className="text-2xl font-display font-semibold">{title}</h3>
               <p className="text-charcoal-500 leading-relaxed">{desc}</p>
             </motion.div>
@@ -164,3 +154,4 @@ export default function LandingPage() {
     </main>
   );
 }
+

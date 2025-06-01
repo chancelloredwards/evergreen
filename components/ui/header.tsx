@@ -1,3 +1,5 @@
+// Path: src/components/ui/header.tsx
+
 import Link from 'next/link';
 
 export default function Header() {
