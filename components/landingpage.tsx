@@ -120,7 +120,7 @@ export default function LandingPage() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M11 17a4 4 0 108 0v1h-8v-1zM12 3v4m0 0a4 4 0 014 4H8a4 4 0 014-4z"
+                      d="M11 17a4 4 0 108 0v1h-8v-1zM12 3v4m0 0a4 4 0 014 4H8a4 4 a0 014-4z"
                     />
                   </svg>
                 ),
